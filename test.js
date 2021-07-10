@@ -1,26 +1,16 @@
-// make a random circle with random color html 5 canvas
+// make a random circle with random color html 5 svg
 
-var canvas = document.getElementById('canvas');
-var ctx = canvas.getContext('2d');
+var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+svg.setAttribute('width', '100%');
+svg.setAttribute('height', '100%');
+svg.setAttribute('viewBox', '0 0 100 100');
 
-var width = canvas.width;
-var height = canvas.height;
+var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+circle.setAttribute('cx', 50);
+circle.setAttribute('cy', 50);
+circle.setAttribute('r', 50);
+circle.setAttribute('fill', 'rgb(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ')');
 
-var centerX = width / 2;
-var centerY = height / 2;
+svg.appendChild(circle);
 
-var radius = Math.floor(Math.random() * width / 2) + 50;
-
-var angle = 0;
-var angleIncrement = 2 * Math.PI / width;
-
-var color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-
-setInterval(function() {
-	ctx.clearRect(0, 0, width, height);
-
-	ctx.beginPath();
-	ctx.arc(centerX, centerY, radius, 0, 2 * Math.PI);
-	ctx.fillStyle = color;
-	ctx.fill();
-}, 10);
+document.body.appendChild(svg);
