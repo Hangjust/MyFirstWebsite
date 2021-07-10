@@ -1,8 +1,8 @@
 // make a random circle with random color html 5 svg
 
 var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-svg.setAttribute('width', '100%');
-svg.setAttribute('height', '100%');
+svg.setAttribute('width', '10%');
+svg.setAttribute('height', '10%');
 svg.setAttribute('viewBox', '0 0 100 100');
 
 var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
