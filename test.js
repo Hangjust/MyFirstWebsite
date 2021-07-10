@@ -3,7 +3,7 @@
 var svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
 svg.setAttribute('width', '100%');
 svg.setAttribute('height', '100%');
-svg.setAttribute('viewBox', '0 0 20 20');
+svg.setAttribute('viewBox', '0 0 50 50');
 
 var circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
 circle.setAttribute('cx', 50);
