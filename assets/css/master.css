@@ -10,3 +10,8 @@ body {
 h1 {
     color: #ffffff;
 }
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+}
