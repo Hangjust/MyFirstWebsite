@@ -29,11 +29,23 @@ html, body {
   color: white;
   padding: .8em;
   text-decoration: none;
-  font-size: 50px;
 }
   
+  .main-nav {
+    text-align: center;
+    font-size: 2.8em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(193, 66, 66, 0.3);
+  }
+  
+  .main-nav li {
+    padding: 0 7%;
+  }
+  
+  
+  
 .nav a:hover {
-  background-color: rgba(193, 66, 66, .3);
+  background-color: rgba(193, 66, 66, 0.3);
 }
 
 .main-header {
