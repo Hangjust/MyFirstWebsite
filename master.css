@@ -60,7 +60,7 @@ html, body {
   text-align: center;
   margin: 0;
   font-size: 5em;
-  color: purple;
+  color: rgba (0, 207, 255, 1);
 }
 
 .about-text-size {
