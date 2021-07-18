@@ -35,7 +35,7 @@ html, body {
     text-align: center;
     font-size: 2.8em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(193, 66, 66, 0.3);
+    border-bottom: 1px solid rgba(193, 66, 66, 0.4);
   }
   
   .main-nav li {
@@ -45,7 +45,7 @@ html, body {
   
   
 .nav a:hover {
-  background-color: rgba(193, 66, 66, 0.3);
+  background-color: rgba(193, 66, 66, 0.4);
 }
 
 .main-header {
