@@ -59,6 +59,13 @@ html, body {
 .about-text {
   text-align: center;
   margin: 0;
-  text-size: 5em;
+  font-size: 5em;
   color: white;
 }
+
+.about-text-size {
+  font-size: 8em;
+}
+
+
+
