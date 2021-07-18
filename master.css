@@ -69,3 +69,16 @@ html, body {
 
 
 
+
+
+.container {
+  margin: 2em;
+}
+
+.section-text {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+
