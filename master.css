@@ -1,13 +1,27 @@
-html, body{
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: VT323;
+}
+
+
+
+
+
+
+html, body {
   padding: 0;
   margin: 0;
 }
-ol{
+.nav ul{
   margin: 0;
 }
 
 
-.main-header{
+.main-header {
   background-color: rgba (0, 0, 0, .6);
   background-image: url("5e99e209dcd88c7783220c24.jpeg");
   background-blend-mode: multiply;
