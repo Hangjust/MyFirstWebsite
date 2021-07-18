@@ -35,7 +35,7 @@ html, body {
     text-align: center;
     font-size: 2.8em;
     font-weight: lighter;
-    border-bottom: 1px solid rgba(193, 66, 66, 0.4);
+    border-bottom: 1px solid rgba(193, 66, 66, 0.3);
   }
   
   .main-nav li {
@@ -45,7 +45,7 @@ html, body {
   
   
 .nav a:hover {
-  background-color: rgba(193, 66, 66, 0.4);
+  background-color: rgba(193, 66, 66, 0.3);
 }
 
 .main-header {
@@ -54,4 +54,11 @@ html, body {
   background-blend-mode: multiply;
   background-size: cover;
   padding-bottom: 30px;
+}
+
+.about-text {
+  text-align: center;
+  margin: 0;
+  text-size: 5em;
+  color: white;
 }
