@@ -1,6 +1,8 @@
-let lastRenderTime = 0
-const SNAKE_SPEED = 2
-
+import (draw as drawSnake, update as updateSnake,  SNAKE_SPEED ) from ''./snake.js '
+  
+  
+  
+  let lastRenderTime = 0
 function main(currentTime) {
     window.requestAnimationFrame(main)
   const secondSienceLastRender = (currentTime - lastRenderTime) /1000
@@ -11,8 +13,7 @@ function main(currentTime) {
   
   
   lastRenderTime = currentTime
-  console.log(Render)
-  
+
   update ()
   draw ()
   
@@ -22,10 +23,10 @@ function main(currentTime) {
 
 
   function update () {
-    
+    updateSnake()
   }
   
   
   function draw () {
-    
+    drawSnake()
   }
