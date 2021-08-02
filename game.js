@@ -1,4 +1,4 @@
-import (draw as drawSnake, update as updateSnake,  SNAKE_SPEED ) from ''./snake.js '
+import (draw as drawSnake, update as updateSnake,  SNAKE_SPEED ) from './snake.js '
 
   
   
