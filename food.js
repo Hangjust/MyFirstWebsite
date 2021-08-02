@@ -1,37 +1,28 @@
-import { getInputDirection } from "./input.js";
+import { onSnake, expandSnake } from './snake.js'
+import { randomGridPosition } from './grid.js'
 
+let food = getRandomFoodPosition()
+const EXPANSION_RATE = 5
 
-export  const SNAKE_SPEED = 2
-const snakeBody = [{x: 11, y:11}]
-
-
-
-
-
-
-
-
-
-
-export  function update () {
- const inputDirection = getInputDirection()
-   for (let i = snakeBody.length - 2; i >= 0; i--) {
-    snakeBody[i + 1] = {...snakeBody[i]}
-    }
-    snakeBody[0].x += inputDirection.x
-    snakeBody[0].y += inputDirection.y
-    
-    
-   }
-  
-  
-  
-export  function draw (gameBoard) {
-    snakeBody.forEach (segment => {
-      const snakeElement = document.createElement ('div')
-      snakeElement.style.gridRowStart = segment.y
-      snakeElement.style.gridColumnStart = segment.x
-      snakeElement.classlist.add('snake')
-      gameBoard.appendChild(snakeElement)
-    })
+export function update() {
+  if (onSnake(food)) {
+    expandSnake(EXPANSION_RATE)
+    food = getRandomFoodPosition()
   }
+}
+
+export function draw(gameBoard) {
+  const foodElement = document.createElement('div')
+  foodElement.style.gridRowStart = food.y
+  foodElement.style.gridColumnStart = food.x
+  foodElement.classList.add('food')
+  gameBoard.appendChild(foodElement)
+}
+
+function getRandomFoodPosition() {
+  let newFoodPosition
+  while (newFoodPosition == null || onSnake(newFoodPosition)) {
+    newFoodPosition = randomGridPosition()
+  }
+  return newFoodPosition
+}
