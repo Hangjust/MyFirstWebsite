@@ -13,3 +13,4 @@ export function outsideGrid(position) {
     position.y < 1 || position.y > GRID_SIZE
   )
 }
+  
