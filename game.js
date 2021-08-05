@@ -8,7 +8,7 @@ const gameBoard = document.getElementById('game-board')
 
 function main(currentTime) {
   if (gameOver) {
-    if (confirm('You lost. Press ok to restart.')) {
+    if (confirm('You Lost NOOB!!! Press OK to restart the game and you better get a higher score.')) {
       window.location = '/'
     }
     return
